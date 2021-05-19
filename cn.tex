@@ -1,0 +1,71 @@
+% !TEX program = xelatex
+% This file is generated, don't manually edit!
+\documentclass{resume}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{linespacing_fix}
+\usepackage[fallback]{xeCJK}
+\begin{document}
+\renewcommand\headrulewidth{0pt}
+\name{朱明志}
+\basicInfo{
+\email{zmzfpc@tongji.edu.cn}\textperiodcentered\
+\github[zmzfpc]{https://github.com/zmzfpc}\textperiodcentered\
+\phone{+8619946254050}
+}
+\section{教育经历}
+\datedsubsection{\textbf{同济大学}, 中国}{2018.09 --现在}
+专业：软件工程(本科)，预计毕业日期：2022.06
+\section{项目经历}
+\datedsubsection{\textbf{同济大学交通运输工程学院\&嘉定公交公司
+}，上海，中国}{11/2020 -- 05/2021}
+\role{公交驾驶员行为感知和安全监测系统}{核心代码开发，成员}
+\begin{itemize}[parsep=0.25ex]
+	\item 使用Keras框架和已有Inception模型组件搭建深度神经网络，用于驾驶员动作感知。
+	\item 利用Adam\&RMSprop两个优化器分步对模型进行训练并设置Dropout层等优化训练结果，减少过拟合。
+	\item 使用激活类图的技术对模型感知结果可视化输出。
+	\item 利用决策树模型，结合OCR等技术识别出视频中的时空信息，对驾驶员行为的安全性进行评估，对不安全的行为进行报警。
+	\item 基于React框架，开发了一个安全监测系统，基于上述训练完成的模型，对驾驶员不当行为进行预警、记录和介入干涉。
+\end{itemize}
+
+\datedsubsection{\textbf{同济大学软件学院
+	}，上海，中国}{09/2020 -- 01/2021}
+\role{CodePass云端代码问答社区}{前端开发，组长}
+\begin{itemize}[parsep=0.25ex]
+	\item 基于React框架开发前端代码，使用ant-design图标库设计前端的UI界面，对整个前端的界面风格和配词进行统筹设计。
+	\item 设计前端界面的跳转逻辑，并设计了登陆信息弹出的逻辑和请求状态弹出的逻辑。
+	\item 开发了问题点赞评论功能，设置了用户点赞一次后再点赞取消点赞的功能，以及按时间先后顺序展示用户评论功能。
+\end{itemize}
+
+\datedsubsection{\textbf{COMAP
+	}，远程}{02/2021}
+\role{MCM 亚洲大黄蜂入侵}{MaxEnT模型训练及推送规则制定，组长}
+\begin{itemize}[parsep=0.25ex]
+	\item 使用MaxEnt生态位模型，结合美国华盛顿州的一些GIS数据，利用已知的大黄蜂入侵信息作为标签，有监督的训练生态位模型，利用最大熵的方法预测某地发生大黄蜂入侵的概率。
+	\item 对训练的生态位模型进行评估，使用响应曲线的方法，评估每一个地理环境变量对预测结果的影响指数，并绘制ROC曲线评估模型预测的合理性。
+	\item 利用drools制定了一个推送规则，按照这个规则向研究人员推送民众提交的报告，优先推送高可靠报告。
+\end{itemize}
+\datedsubsection{\textbf{同济大学电子与信息工程学院
+	}，上海，中国}{04/2021 -- 现在}
+\role{金融网络风险评估}{代码开发，第一负责人}
+\begin{itemize}[parsep=0.25ex]
+	\item 基于R语言NetworkRiskMeasures包提供的数据格式，利用基于内容的智能爬虫爬取世界15万家银行的3项核心数据。
+	\item 改进NetworkRiskMeasures包的银行内拆借网络模拟算法，并使用Python对其进行重构，以期提高生成模拟网络的速率。
+\end{itemize}
+\section{技能}
+\begin{itemize}[parsep=0.25ex]
+\item \textbf{编程语言}:\textbf{多种语言},
+熟练使用C++、C、Python、Tex和JavaScript，熟悉Java、C\#、R、HTML、CSS.(排名不分先后)
+\item \textbf{机器学习}:有分类和聚类问题的实战经验，对分类和聚类算法的原理有一定了解。
+\item \textbf{深度学习}:熟练使用Keras框架，环境背景熟悉TensorFlow2.x，对神经网络的原理有一定理解，有ANN、CNN网络的搭建经验。
+\item \textbf{前端开发}:有React和Vue框架的使用经验，有开发React Webapp的经验。
+\item \textbf{开发工具}:能适应任何编辑器/操作系统，平常在Windows下使用VSCode和JetBrains IDE，有使用GitHub、Gitee团队协作工具的经验。
+\end{itemize}
+\section{其它}
+\begin{itemize}[parsep=0.25ex]
+	\item 2021美国大学生数学建模竞赛，\url{https://www.comap-math.com/mcm/2021Certs/2123864.pdf}, Meritorious Winner
+	\item 2020全国大学生竞赛(非数学类)，二等奖
+	%\item IntelliJ Plugin developer profile: \url{https://plugins.jetbrains.com/author/10a216dd-c558-4aaf-aa8a-723f431452fb}
+	
+\end{itemize}
+\end{document}
