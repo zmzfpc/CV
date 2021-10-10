@@ -1,0 +1,266 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{fontspec}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Mingzhi}{Zhu}
+%\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{School of Software Engineering, Tongji University}{Shanghai,China}{}
+\address{School of Software Engineering, Tongji University}{Siping Road,Yangpu District,Shanghai,China}{}
+% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+%\phone[mobile]{909-839-3097}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+% \email{xpan1@swarthmore.edu}                               % optional, remove / comment the line if not wanted
+% \homepage{shawnpan.me}                         % optional, remove / comment the line if not wanted
+% \extrainfo{}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+  
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\customcvproject}[4][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\setlength{\tabcolsep}{12pt}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace*{-23mm}
+
+\begin{center}
+\begin{tabular}{ c c c c }
+ \faGlobe\enspace zmz.mzzhu.com & \faEnvelopeO\enspace zmzfpc@tongji.edu.cn & \faGithub\enspace github.com/zmzfpc & \faMobile\enspace +8619946254050\\  
+\end{tabular}
+\end{center}
+
+\section{EDUCATION}
+{\customcventry{Shanghai, China}{Tongji University}{B.Eng. in Software Engineering}{June 2022 (Expected)}{}{GPA:4.48/5(89.8/100),Advanced GPA:4.82/5(93.2/100)}{Relevant Coursework: AI and Business Intelligence, Data Mining, Human-Computer Interaction, Calculus, Data Warehouse, GIS Introduction, Memory Databases, Software Testing, Principle of Compiler, Design Pattern, Java EE Programming, Software Engineering Economics, Discrete Mathematics, Probability and Statistics, Data Structures, Algorithm Design And Analyss, Software Engineering et al.}}
+
+\section{HONORS \& AWARDS}
+\begin{minipage}{\maincolumnwidth}%
+	\small{
+		\begin{itemize}		
+			\item Meritorious Winner of the Mathematical Contest in Modeling, COMAP, 2021 \textbf{(Top 7\%)}
+			\item Second Prize in National Mathematics competition, Chinese Math. Society, 2020\textbf{(Top 3\%)}
+			\item Social Activity Scholarship,Tongji University, twice, 2019\&2020 \textbf{(Top 5\%)}
+			\item First-Class Scholarship, Tongji University, 2019 \textbf{(Top 5\%)}
+	\end{itemize}}%
+\end{minipage}%
+
+\section{RESEARCH EXPERIENCE}
+
+{\customcventry{Apr. 2021 - Nov. 2021}{Advisor: Prof. Dawei Cheng, School of Computer Science}{Financial Network Risk Measure and Prediction }{Tongji Univ, Shanghai}{}
+{\begin{itemize}
+  \item Using content-based intelligent crawler to get three core data set (assets, liabilities, liquidity buffer) and  five operating indicators of 150,000 banks in the world.
+  \item Refactoring simulation algorithm in Python to improve the network generation algorithm with Segment Tree, greatly increasing the speed of generating simulated networks.
+  \item Building graph neural network combined with the interbank network to simulate the ability of other banks to resist crisis when one bank has a credit crisis.
+\end{itemize}
+}
+}
+{\customcventry{Nov. 2020 – Jun. 2021}{Advisor: Prof.Yu Shen, School of Transportation Information}{Bus Drivers Behaviors Perception}{Jiading Bus Co\&Tongji Univ, Shanghai}{}
+{\begin{itemize}
+  \item Building a deep convolutional neural network for driver action perception with Keras.
+  \item	Optimizing the model by training and set the Dropout layer with , Adam \& RMSprop.
+  \item Using activation class diagram to visualize the output of the model perception results.
+  \item Combing decision tree with OCR and other technologies to identify spatio-temporal information in the video. 
+\end{itemize}
+}
+}
+
+{\customcventry{Sep. 2021 – Oct. 2021}{Advisor: Prof. Ying Zhang,School of Computer Science}{E-commerce Recommendation Attack Identification}{Univ of Tech. Sydney, Sydney}{}
+{\begin{itemize}
+  \item Focus on user-item click records.
+  \item Applying xgboost algorithm to dichotomize user product click records provided by a kafak message queue.
+  \item Packaging the model and workflow as a docker image to be deployed on the cloud server.
+\end{itemize}
+}
+}
+
+\section{PUBLICATIONS}
+\begin{minipage}{\maincolumnwidth}%
+	\small{
+		\begin{itemize}
+			\item \textbf{Mingzhi Zhu}, Dawei Cheng, Zixuan Tan,Simulation Network of Global Major Commercial Banks .Scientific Data 2021.(Under review)
+			\item \textbf{Patents: }An Interpretable Deep Learning-based Model for Perceiving Bus Drivers Behaviors.(Under review)
+	\end{itemize}}%
+\end{minipage}%
+
+\section{INTERNSHIP}
+{\customcvproject{Codepass Cloud Code Q\&A Community}{Aug. 2021 -Nov. 2021}
+	{\begin{itemize}
+			\item The project is a question and answer community with the theme of solving code problems.
+			\item The project is implemented based on Docker containers, and each question asked by the user provides a docker container for simulating the user's environment.
+		\end{itemize}
+	}
+}
+
+
+\section{PROJECTS}
+
+{\customcvproject{Codepass Cloud Code Q\&A Community}{Oct. 2020 -Dec. 2021}
+  {\begin{itemize}
+    \item The project is a question and answer community with the theme of solving code problems.
+    \item The project is implemented based on Docker containers, and each question asked by the user provides a docker container for simulating the user's environment.
+    \item The front-end of the project is implemented based on the React framework.
+    \item Using Redis as a data cache, some hot data is stored in Redis, and when it's needed, it's taken directly from memory, greatly improving speed and saving server overhead.
+  \end{itemize}
+  }
+}
+
+{\customcvproject{Film Information Storage System}{Sep. 2020 – Jan. 2021}
+{\begin{itemize}
+  \item 250,000 pieces of movie data were obtained from Amazon.com using a crawler.
+  \item Use Hadoop to build a distributed system to store data.
+  \item Examine the performance of a data warehouse built using hadoop, by comparing it with a relational database(mysql) and a non-relational database(neo4j).
+\end{itemize}
+}
+}
+{\customcvproject{TV Drama Recommendation System}{Apr. 2021 – Jul. 2021}
+{\begin{itemize}
+  \item The data for the project is the TV program viewing history of 26,000 subscribers in a city, as well as some information about these programs.
+  \item The project implemented two recommendation algorithms DKN and NRML in the PyTorch framework based on the methods provided in the existing papers.
+  \item Use Tensorboard to display training results in a dashboard and compare this result with the traditional algorithm such as ALS.
+\end{itemize}
+}
+
+}
+{\customcvproject{Entity Information System}{Feb. 2021 – Apr. 2021}
+	{\begin{itemize}
+			\item The knowledge graphs in this project are derived from publicly available financial datasets provided by Reuters.
+			\item The project implements data pre-processing and storage, provides basic read, import, and storage functions for data sets, through the Neo4j graph database.
+			%\item The project implements a relational query between one and multiple companies/individuals in the dataset and presents it in a visual way.
+			\item The project implements a custom scoring system for companies/individuals based on the association between companies/individuals and corporate information.
+		\end{itemize}
+	}
+}
+
+{\customcvproject{Map of Shanghai Cultural Enterprises}{Mar. 2021 – Jun. 2021}
+	{\begin{itemize}
+			\item Developed a dynamic map of Shanghai based on Arcgic API.
+			\item The front-end is built using Vue framework, supporting the show/hide of map layers, as well as complex interactive operations such as jumping by clicking, counting the number of cultural enterprises, and predicting the distribution of cultural enterprises.
+			\item The cultural enterprise distribution prediction uses the MaxEnt model, based on the distribution of streets, cultural heritage, economic development index and the distribution of existing cultural enterprises in Shanghai.
+		\end{itemize}
+	}
+}
+
+
+
+\section{TECHNICAL STRENGTH}
+\begin{minipage}{\maincolumnwidth}%
+	\small{
+		\begin{itemize}
+			\item \textbf{Programming Languages:} C/C++,Python,C\#,Java,HTML/CSS,Javascript,R,\LaTeX
+			\item \textbf{Platforms:} Linux, Windows, Android
+			\item \textbf{Packages \& Tools:} Numpy, Pandas, TensorFlow, Keras, PyTorch, Tesseract, Matplotlib, Sklearn, Scipy, MxNet, Git
+	\end{itemize}}%
+\end{minipage}%
+
+\section{EXTRACURRICULAR}
+\begin{minipage}{\maincolumnwidth}%
+	\small{
+    	\begin{itemize}
+          \item \textbf{Sports:} Table Tennis(silver medal in University-wide competition), Soccer(Bronze medal in college league)
+          \item \textbf{Volunteer Activities: }"SunShine Home" Service Center for the Disabled, Anting Town, Jiading District, Shanghai, 160 hours of volunteer service.
+		\end{itemize}}%
+\end{minipage}%
+      
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
